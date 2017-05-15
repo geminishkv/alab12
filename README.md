@@ -1,6 +1,6 @@
 ## Laboratory work XII
 
-Данная лабораторная работа посвещена изучению специализированного текстового редактора *vim*
+Данная лабораторная работа посвещена изучению специализированного текстового редактора **Vim**
 
 ```bash
 $ open https://ru.wikipedia.org/wiki/Vim
@@ -8,13 +8,48 @@ $ open https://ru.wikipedia.org/wiki/Vim
 
 ## Tasks
 
-- [ ] 1. Выполнить инструкцию учебного материала
-- [ ] 2. Ознакомиться со ссылками учебного материала
+- [ ] 1. Создать публичный репозиторий с названием **lab12** на сервисе **GitHub**
+- [ ] 2. Выполнить инструкцию учебного материала
+- [ ] 3. Ознакомиться со ссылками учебного материала
 
 ## Tutorial
 
 ```bash
+$ export GITHUB_USERNAME=<имя_пользователя>
+```
+
+```bash
 $ vimtutor ru
+```
+
+```bash
+$ git clone https://github.com/${GITHUB_USERNAME}/lab11 lab12
+$ cd lab12
+$ git remote remove origin
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab12
+```
+
+```bash
+$ vim README.md
+:s/lab11/lab12/g
+/file<CR>wChaving the path environment variable value **LOG_PATH**
+:wq
+```
+
+```bash
+$ vim sources/demo.cpp
+Yp3wct>cstdlib<ESC>
+8Gostd::string log_path = std::getenv("LOG_PATH");
+/"log<CR>
+cf"log_path<CR>
+k2dd2kpVj<<
+:wq
+```
+
+```bash
+$ git add .
+$ git commit -m"refactoring"
+$ git push origin master
 ```
 
 ## Links
