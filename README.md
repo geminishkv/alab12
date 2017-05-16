@@ -33,24 +33,26 @@ $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab12
 ```bash
 $ vim README.md
 :s/lab11/lab12/g
-/file<CR>wChaving the path environment variable value **LOG_PATH**
+/file<CR>wChaving the path environment variable value **LOG_PATH**<ESC>
 :wq
 ```
 
 ```bash
 $ vim sources/demo.cpp
 Yp3wct>cstdlib<ESC>
-8Gostd::string log_path = std::getenv("LOG_PATH");
+/while<CR>ostd::string log_path = std::getenv("LOG_PATH");<ESC>
 /"log<CR>
-cf"log_path<CR>
-k2dd2kpVj<<
+cf"log_path<ESC>
+k2dd2kpVj<
 :wq
 ```
 
 ```bash
 $ pushd $HUNTER_ROOT
-$ git create
-$ git release create v0.18.57.1
+$ git config --global hub.protocol https
+$ git fork
+$ git branch -u rusdevops/master master
+$ git release create -m"v0.18.57.1" v0.18.57.1
 $ git release show v0.18.57.1
 ```
 
@@ -66,7 +68,7 @@ $ popd
 $ echo $MYHUNTER_SHA1 | pbcopy
 $ vim CMakeLists.txt
 /SHA1<CR>
-wcw<C-V><CR>
+wc2w<C-V><ESC>
 :wq
 ```
 
