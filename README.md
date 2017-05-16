@@ -47,7 +47,7 @@ k2dd2kpVj<<
 ```
 
 ```bash
-$ cd $HUNTER_ROOT
+$ pushd $HUNTER_ROOT
 $ git create
 $ git release create v0.18.57.1
 $ git release show v0.18.57.1
@@ -60,7 +60,8 @@ $ echo $MYHUNTER_SHA1
 $ rm -rf v0.18.57.1.tar.gz
 ```
 
-```
+```bash
+$ popd
 $ echo $MYHUNTER_SHA1 | pbcopy
 $ vim CMakeLists.txt
 /SHA1<CR>
