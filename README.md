@@ -57,6 +57,7 @@ $ git release show v0.18.57.1
 $ wget https://github.com/${GITHUB_USERNAME}/hunter/archive/v0.18.57.1.tar.gz
 $ export MYHUNTER_SHA1=`openssl sha1 v0.18.57.1.tar.gz | cut -d'=' -f2 | cut -c2-41`
 $ echo $MYHUNTER_SHA1
+$ rm -rf v0.18.57.1.tar.gz
 ```
 
 ```
