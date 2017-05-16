@@ -16,6 +16,7 @@ $ open https://ru.wikipedia.org/wiki/Vim
 
 ```bash
 $ export GITHUB_USERNAME=<имя_пользователя>
+$ export HUNTER_ROOT=<путь_к_проекту>
 ```
 
 ```bash
