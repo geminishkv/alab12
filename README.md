@@ -87,6 +87,11 @@ $ git commit -m"refactoring"
 $ git push origin master
 ```
 
+```bash
+$ travis login --auto
+$ travis enable
+```
+
 ## Links
 
 - [ex](https://en.wikipedia.org/wiki/Ex_(text_editor))
