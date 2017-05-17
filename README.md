@@ -11,6 +11,7 @@ $ open https://ru.wikipedia.org/wiki/Vim
 - [ ] 1. Создать публичный репозиторий с названием **lab12** на сервисе **GitHub**
 - [ ] 2. Выполнить инструкцию учебного материала
 - [ ] 3. Ознакомиться со ссылками учебного материала
+- [ ] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
 
@@ -73,6 +74,13 @@ wc2w<C-V><ESC>
 ```
 
 ```bash
+$ vim README.md
+/lab11<CR>
+e<C-A>
+:wq
+```
+
+```bash
 $ git add .
 $ git commit -m"refactoring"
 $ git push origin master
@@ -82,3 +90,7 @@ $ git push origin master
 
 - [ex](https://en.wikipedia.org/wiki/Ex_(text_editor))
 - [vi](https://en.wikipedia.org/wiki/Vi)
+
+```
+Copyright (c) 2017 Vyacheslav Vershinin
+```
