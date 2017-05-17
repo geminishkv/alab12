@@ -77,6 +77,7 @@ wc2w<C-V><ESC>
 $ vim README.md
 /lab11<CR>
 e<C-A>
+ne<C-A>
 :wq
 ```
 
