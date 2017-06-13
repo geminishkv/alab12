@@ -2,7 +2,7 @@
 
 Данная лабораторная работа посвещена изучению специализированного текстового редактора **Vim**
 
-```bash
+```ShellSession
 $ open https://ru.wikipedia.org/wiki/Vim
 ```
 
@@ -15,30 +15,30 @@ $ open https://ru.wikipedia.org/wiki/Vim
 
 ## Tutorial
 
-```bash
+```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export HUNTER_ROOT=<путь_к_проекту>
 ```
 
-```bash
+```ShellSession
 $ vimtutor ru
 ```
 
-```bash
+```ShellSession
 $ git clone https://github.com/${GITHUB_USERNAME}/lab11 lab12
 $ cd lab12
 $ git remote remove origin
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab12
 ```
 
-```bash
+```ShellSession
 $ vim README.md
 :s/lab11/lab12/g
 /file<CR>wChaving the path environment variable value **LOG_PATH**<ESC>
 :wq
 ```
 
-```bash
+```ShellSession
 $ vim sources/demo.cpp
 Yp3wct>cstdlib<ESC>
 /while<CR>ostd::string log_path = std::getenv("LOG_PATH");<ESC>
@@ -48,7 +48,7 @@ k2dd2kpVj<
 :wq
 ```
 
-```bash
+```ShellSession
 $ pushd $HUNTER_ROOT
 $ git config --global hub.protocol https
 $ git fork
@@ -57,14 +57,14 @@ $ git release create -m"v0.18.57.1" v0.18.57.1
 $ git release show v0.18.57.1
 ```
 
-```bash
+```ShellSession
 $ wget https://github.com/${GITHUB_USERNAME}/hunter/archive/v0.18.57.1.tar.gz
 $ export MYHUNTER_SHA1=`openssl sha1 v0.18.57.1.tar.gz | cut -d'=' -f2 | cut -c2-41`
 $ echo $MYHUNTER_SHA1
 $ rm -rf v0.18.57.1.tar.gz
 ```
 
-```bash
+```ShellSession
 $ popd
 $ echo $MYHUNTER_SHA1 | pbcopy
 $ vim CMakeLists.txt
@@ -73,7 +73,7 @@ wc2w<C-V><ESC>
 :wq
 ```
 
-```bash
+```ShellSession
 $ vim README.md
 /lab11<CR>
 e<C-A>
@@ -81,20 +81,20 @@ ne<C-A>
 :wq
 ```
 
-```bash
+```ShellSession
 $ git add .
 $ git commit -m"refactoring"
 $ git push origin master
 ```
 
-```bash
+```ShellSession
 $ travis login --auto
 $ travis enable
 ```
 
 ## Report
 
-```bash
+```ShellSession
 $ cd ~/workspace/labs/
 $ export LAB_NUMBER=12
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
