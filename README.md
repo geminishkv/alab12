@@ -52,7 +52,7 @@ k2dd2kpVj<
 $ pushd $HUNTER_ROOT
 $ git config --global hub.protocol https
 $ git fork
-$ git branch -u rusdevops/master master
+$ git branch -u ${GITHUB_USERNAME}/master master
 $ git release create -m"v0.18.57.1" v0.18.57.1
 $ git release show v0.18.57.1
 ```
