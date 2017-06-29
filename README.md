@@ -109,6 +109,7 @@ $ gistup -m "lab${LAB_NUMBER}"
 
 - [ex](https://en.wikipedia.org/wiki/Ex_(text_editor))
 - [vi](https://en.wikipedia.org/wiki/Vi)
+- [hub](https://github.com/github/hub)
 
 ```
 Copyright (c) 2017 Братья Вершинины
