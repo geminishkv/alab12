@@ -17,6 +17,7 @@ $ open https://ru.wikipedia.org/wiki/Vim
 
 ```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
+$ export HUNTER_VERSION=<версия_пакетного_менеджера>
 $ export HUNTER_ROOT=<путь_к_проекту>
 ```
 
@@ -53,15 +54,15 @@ $ pushd $HUNTER_ROOT
 $ git config --global hub.protocol https
 $ git fork
 $ git branch -u ${GITHUB_USERNAME}/master master
-$ git release create -m"v0.18.57.1" v0.18.57.1
-$ git release show v0.18.57.1
+$ git release create -m"${HUNTER_VERSION}.1" ${HUNTER_VERSION}.1
+$ git release show ${HUNTER_VERSION}.1
 ```
 
 ```ShellSession
-$ wget https://github.com/${GITHUB_USERNAME}/hunter/archive/v0.18.57.1.tar.gz
-$ export MYHUNTER_SHA1=`openssl sha1 v0.18.57.1.tar.gz | cut -d'=' -f2 | cut -c2-41`
+$ wget https://github.com/${GITHUB_USERNAME}/hunter/archive/${HUNTER_VERSION}.1.tar.gz
+$ export MYHUNTER_SHA1=`openssl sha1 ${HUNTER_VERSION}.1.tar.gz | cut -d'=' -f2 | cut -c2-41`
 $ echo $MYHUNTER_SHA1
-$ rm -rf v0.18.57.1.tar.gz
+$ rm -rf ${HUNTER_VERSION}.1.tar.gz
 ```
 
 ```ShellSession
