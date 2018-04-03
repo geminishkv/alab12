@@ -18,7 +18,7 @@ $ open https://ru.wikipedia.org/wiki/Vim
 ```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export HUNTER_VERSION=<версия_пакетного_менеджера>
-$ export HUNTER_ROOT=<путь_к_проекту>
+$ export HUNTER_ROOT=<путь_к_пакетного_менеджеру>
 ```
 
 ```ShellSession
@@ -54,6 +54,7 @@ $ pushd $HUNTER_ROOT
 $ git config --global hub.protocol https
 $ git fork
 $ git branch -u ${GITHUB_USERNAME}/master master
+...
 $ git release create -m"${HUNTER_VERSION}.1" ${HUNTER_VERSION}.1
 $ git release show ${HUNTER_VERSION}.1
 ```
